@@ -1,0 +1,90 @@
+==PROF== Connected to process 9835
+==PROF== Profiling "add" - 1: 0%....50%....100%Max error: 0
+ - 44 passes
+==PROF== Disconnected from process 9835
+[9835] add_grid@127.0.0.1
+  add, 2019-May-20 23:39:24, Context 1, Stream 7
+    Section: GPU Speed Of Light
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    Memory Frequency                                                                   Ghz                         130.86
+    SOL FB                                                                               %                           5.01
+    Elapsed Cycles                                                                   cycle                         97,416
+    SM Frequency                                                                       Ghz                           1.62
+    Memory [%]                                                                           %                          15.73
+    Duration                                                                       usecond                          59.84
+    SOL L2                                                                               %                          15.73
+    SOL TEX                                                                              %                          13.48
+    SM Active Cycles                                                                 cycle                      97,233.33
+    SM [%]                                                                               %                          14.07
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+    Section: Compute Workload Analysis
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    Executed Ipc Active                                                         inst/cycle                           0.61
+    Executed Ipc Elapsed                                                        inst/cycle                           0.58
+    Issued Ipc Active                                                           inst/cycle                           0.61
+    Issue Slots Busy                                                                     %                          10.17
+    SM Busy                                                                              %                          14.07
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+    Section: Memory Workload Analysis
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    Memory Throughput                                                         Gbyte/second                         209.67
+    Mem Busy                                                                             %                          15.73
+    Max Bandwidth                                                                        %                          17.33
+    L2 Hit Rate                                                                          %                          32.80
+    Mem Pipes Busy                                                                       %                           7.03
+    L1 Hit Rate                                                                          %                              0
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+    Section: Scheduler Statistics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    Active Warps Per Scheduler                                                  warp/cycle                          14.20
+    Eligible Warps Per Scheduler                                                warp/cycle                           0.21
+    No Eligible                                                                          %                          95.06
+    Instructions Per Active Issue Slot                                          inst/issue                           1.04
+    Issued Warp Per Scheduler                                                  issue/cycle                           0.15
+    One or More Eligible                                                                 %                          14.66
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+    Section: Warp State Statistics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    Avg. Not Predicated Off Threads Per Warp                                   thread/inst                          29.54
+    Avg. Active Threads Per Warp                                               thread/inst                             32
+    Warp Cycles Per Executed Instruction                                        cycle/inst                          92.91
+    Warp Cycles Per Issued Instruction                                          cycle/inst                          92.70
+    Warp Cycles Per Issue Active                                               cycle/issue                          96.43
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+    Section: Instruction Statistics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    Avg. Executed Instructions Per Scheduler                                          inst                      14,199.47
+    Executed Instructions                                                             inst                        851,968
+    Avg. Issued Instructions Per Scheduler                                            inst                      14,231.47
+    Issued Instructions                                                               inst                        853,888
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+    Section: Launch Statistics
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    Block Size                                                                                                        256
+    Grid Size                                                                                                       4,096
+    Registers Per Thread                                                   register/thread                             10
+    Shared Memory Configuration Size                                                  byte                              0
+    Dynamic Shared Memory Per Block                                             byte/block                              0
+    Static Shared Memory Per Block                                              byte/block                              0
+    Threads                                                                         thread                      1,048,576
+    Waves Per SM                                                                                                    34.13
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
+    Section: Occupancy
+    ---------------------------------------------------------------------- --------------- ------------------------------
+    Block Limit SM                                                                   block                             32
+    Block Limit Registers                                                            block                             16
+    Block Limit Shared Mem                                                           block                            inf
+    Block Limit Warps                                                                block                              8
+    Achieved Active Warps Per SM                                                warp/cycle                          57.30
+    Achieved Occupancy                                                                   %                          89.52
+    Theoretical Active Warps per SM                                             warp/cycle                             64
+    Theoretical Occupancy                                                                %                            100
+    ---------------------------------------------------------------------- --------------- ------------------------------
+
